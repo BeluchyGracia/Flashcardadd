@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     private val SAVE_CARD_REQUEST = 2
 
     private lateinit var flashcardQuestion: TextView
-    private lateinit var flashcardAnswer: TextViewgit 
+    private lateinit var flashcardAnswer: TextView
     private  lateinit var textView2: TextView
     private  lateinit var textView3: TextView
     private lateinit var  textView4: TextView
