@@ -38,5 +38,13 @@
      android:layout_alignParentRight="true"
      app:srcCompat="@drawable/plus_foreground" />
 
+ <ImageView
+     android:id="@+id/editBtn"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentLeft="true"
+     app:srcCompat="@drawable/edit_foreground" />
+
 
 </RelativeLayout>
