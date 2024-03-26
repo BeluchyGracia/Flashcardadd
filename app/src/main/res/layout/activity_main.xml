@@ -30,6 +30,46 @@
      android:background="#0000FF"
      android:textSize="40sp" />
 
+
+ <TextView
+     android:id="@+id/textView2"
+     android:layout_below="@id/flashcard_answer"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:textColor="#0000FF"
+     android:background="#FFC79F"
+     android:textSize="24sp"
+     android:layout_marginTop="16dp"/>
+
+
+
+
+ <TextView
+     android:id="@+id/textView3"
+     android:layout_below="@id/textView2"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:textColor="#0000FF"
+     android:background="#FFC79F"
+     android:textSize="24sp"
+     android:layout_marginTop="16dp"/>
+
+ <TextView
+     android:id="@+id/textView4"
+     android:layout_below="@id/textView3"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:textColor="#0000FF"
+     android:background="#FFC79F"
+     android:textSize="24sp"
+     android:layout_marginTop="16dp"/>
+
+
+
+
  <ImageView
      android:id="@+id/pbtn"
      android:layout_width="wrap_content"

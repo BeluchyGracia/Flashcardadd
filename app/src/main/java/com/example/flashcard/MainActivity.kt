@@ -16,7 +16,11 @@ class MainActivity : AppCompatActivity() {
     private val SAVE_CARD_REQUEST = 2
 
     private lateinit var flashcardQuestion: TextView
-    private lateinit var flashcardAnswer: TextView
+    private lateinit var flashcardAnswer: TextViewgit 
+    private  lateinit var textView2: TextView
+    private  lateinit var textView3: TextView
+    private lateinit var  textView4: TextView
+
     private lateinit var bontonPlus: ImageView
     private lateinit var boutonEdit: ImageView
 
@@ -25,8 +29,15 @@ class MainActivity : AppCompatActivity() {
         if (result.resultCode == Activity.RESULT_OK && data != null) {
             val question = data.getStringExtra("question")
             val answer = data.getStringExtra("answer1")
+            val answer2 = data.getStringExtra("answer2")
+            val answer3 = data.getStringExtra("answer3")
+            val answer4 = data.getStringExtra("answer4")
+
             flashcardQuestion.text = question
             flashcardAnswer.text = answer
+            textView2.text = answer2
+            textView3.text = answer3
+            textView4.text = answer4
         } else {
             Log.i("AddCardActivity", "Save operation cancelled or no data returned")
         }
@@ -38,6 +49,10 @@ class MainActivity : AppCompatActivity() {
 
         flashcardQuestion = findViewById(R.id.flashcard_question)
         flashcardAnswer = findViewById(R.id.flashcard_answer)
+        textView2 = findViewById(R.id.textView2)
+        textView3 = findViewById(R.id.textView3)
+        textView4 = findViewById(R.id.textView4)
+
         bontonPlus = findViewById(R.id.pbtn)
         boutonEdit = findViewById(R.id.editBtn)
 
@@ -63,10 +78,17 @@ class MainActivity : AppCompatActivity() {
         boutonEdit.setOnClickListener {
             val question = flashcardQuestion.text.toString()
             val answer1 = flashcardAnswer.text.toString()
+            val answer2 = textView2.text.toString()
+            val answer3 = textView3.text.toString()
+            val answer4 = textView4.text.toString()
 
             val intent = Intent(this, AddCardActivity::class.java)
             intent.putExtra("question", question)
             intent.putExtra("answer1", answer1)
+            intent.putExtra("answer2", answer2)
+            intent.putExtra("answer3", answer3)
+            intent.putExtra("answer4", answer4)
+
             startActivityForResult(intent, ADD_CARD_REQUEST)
         }
     }
@@ -76,8 +98,16 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == ADD_CARD_REQUEST && resultCode == Activity.RESULT_OK) {
             val question = data?.getStringExtra("question")
             val answer = data?.getStringExtra("answer1")
+            val answer1 = data?.getStringExtra("answer2")
+            val answer2 = data?.getStringExtra("answer3")
+            val answer3 = data?.getStringExtra("answer4")
+
             flashcardQuestion.text = question
             flashcardAnswer.text = answer
+            textView2.text = answer1
+            textView3.text = answer2
+            textView4.text = answer3
+
         }
     }
 }
