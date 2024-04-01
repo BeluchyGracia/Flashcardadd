@@ -12,63 +12,57 @@
      android:layout_width="match_parent"
      android:layout_height="200dp"
      android:gravity="center"
-     android:text="Who is the 44th President of the United States?"
+     android:text=""
      android:textColor="#808080"
      android:background="@drawable/card_background"
      android:textSize="40sp"
      android:elevation="5dp"
      android:layout_margin="16dp"/>
 
+<!-- <TextView-->
+<!--     android:id="@+id/flashcard_answer"-->
+<!--     android:layout_below="@id/flashcard_question"-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="200dp"-->
+<!--     android:gravity="center"-->
+<!--     android:text="Barack Obama"-->
+<!--     android:textColor="#808080"-->
+<!--     android:background="#0000FF"-->
+<!--     android:textSize="40sp" />-->
+
+
  <TextView
      android:id="@+id/flashcard_answer"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
      android:layout_below="@id/flashcard_question"
-     android:layout_width="match_parent"
-     android:layout_height="200dp"
+     android:layout_marginTop="187dp"
+     android:background="#FFC79F"
      android:gravity="center"
-     android:text="Barack Obama"
-     android:textColor="#808080"
-     android:background="#0000FF"
-     android:textSize="40sp" />
-
+     android:textColor="#0000FF"
+     android:textSize="24sp" />
 
  <TextView
-     android:id="@+id/textView2"
+     android:id="@+id/flashcard_answer2"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
      android:layout_below="@id/flashcard_answer"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
+     android:layout_marginTop="65dp"
+     android:background="#FFC79F"
      android:gravity="center"
      android:textColor="#0000FF"
-     android:background="#FFC79F"
-     android:textSize="24sp"
-     android:layout_marginTop="16dp"/>
-
-
-
+     android:textSize="24sp" />
 
  <TextView
-     android:id="@+id/textView3"
-     android:layout_below="@id/textView2"
+     android:id="@+id/flashcard_answer3"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
+     android:layout_below="@id/flashcard_answer2"
+     android:layout_marginTop="74dp"
+     android:background="#FFC79F"
      android:gravity="center"
      android:textColor="#0000FF"
-     android:background="#FFC79F"
-     android:textSize="24sp"
-     android:layout_marginTop="16dp"/>
-
- <TextView
-     android:id="@+id/textView4"
-     android:layout_below="@id/textView3"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:gravity="center"
-     android:textColor="#0000FF"
-     android:background="#FFC79F"
-     android:textSize="24sp"
-     android:layout_marginTop="16dp"/>
-
-
-
+     android:textSize="24sp" />
 
  <ImageView
      android:id="@+id/pbtn"
@@ -85,6 +79,27 @@
      android:layout_alignParentBottom="true"
      android:layout_alignParentLeft="true"
      app:srcCompat="@drawable/edit_foreground" />
+
+
+ <ImageView
+     android:id="@+id/rightbtn"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentBottom="true"
+     android:layout_marginLeft="295dp"
+     android:layout_marginBottom="403dp"
+     app:srcCompat="@drawable/right_foreground" />
+
+ <ImageView
+     android:id="@+id/poubtn"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentBottom="true"
+     android:layout_marginLeft="133dp"
+     android:layout_marginBottom="394dp"
+     app:srcCompat="@drawable/poubelle_foreground" />
 
 
 </RelativeLayout>
