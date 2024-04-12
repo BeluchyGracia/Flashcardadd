@@ -7,7 +7,7 @@ this application Add a new page to modify the first question entry.
 
 ### App Walk-though
 
-<img src="https://github.com/BeluchyGracia/Flashcardadd/blob/main/FlashcardAddd.gif" width=200><br>
+<img src="https://github.com/BeluchyGracia/Flashcardadd/blob/main/VideoDevoirAdd.gif" width=200><br>
 
 
 
